@@ -1,0 +1,42 @@
+<div style="display: flex; flex-direction: column; height: 100%;">
+    <div class="toolbar">
+        <mat-toolbar color="primary">
+            <button type="button" mat-icon-button (click)="drawer.toggle()" class="example-icon"
+                aria-label="Example icon-button with menu icon">
+                <mat-icon>menu</mat-icon>
+            </button>
+            <span>Paraxute</span>
+            <span class="example-spacer"></span>
+        </mat-toolbar>
+    </div>
+    
+    <mat-drawer-container class="example-container">
+        <mat-drawer #drawer mode="side">
+            <mat-list>
+                <mat-list-item>
+                    <mat-icon style="margin-right: 1em;">face</mat-icon>
+                    <h3 style="padding-right: 3em;">Alumnos</h3>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                    <mat-icon style="margin-right: 1em;">school</mat-icon>
+                    <h3 style="padding-right: 3em;">Cursos</h3>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                    <mat-icon style="margin-right: 1em;">group</mat-icon>
+                    <h3 style="padding-right: 3em;">Maestros</h3>
+                </mat-list-item>
+                <mat-divider></mat-divider>
+                <mat-list-item>
+                    <mat-icon style="margin-right: 1em;">schedule</mat-icon>
+                    <h3 style="padding-right: 3em;">Horarios</h3>
+                </mat-list-item>
+            </mat-list>
+        </mat-drawer>
+        
+        <div class="example-sidenav-content">
+            <h1>Paraxute</h1>
+        </div>
+    </mat-drawer-container>
+</div>
